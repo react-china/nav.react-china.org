@@ -1,0 +1,40 @@
+
+body {
+  margin: 0;
+  padding: 100px 300px;
+  font-size: 18px;
+  font-family: Palatino, Optima, "Source Han Sans CN", "Hiragino Sans GB" Georgia, serif;
+  line-height: 2.4em;
+  background-image: url(https://github.com/facebook/react/wiki/react-logo-1000-transparent.png);
+  background-repeat: no-repeat;
+  background-position: 600px 0;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.title {
+  color: #aaa;
+  margin: 60px 0 10px;
+}
+
+.title span {
+  font-size: 16px;
+  display: inline-block;
+}
+
+.about {
+  font-size: 40px;
+  color: #aae;
+}
+
+.note {
+  margin-top: 100px;
+  font-size: 14px;
+}
+
+.note a {
+  color: #daa;
+  font-style: italic;
+}
