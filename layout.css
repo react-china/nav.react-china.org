@@ -1,40 +1,176 @@
-
 body {
-  margin: 0;
-  padding: 100px 300px;
   font-size: 18px;
+  font-weight: 300;
   font-family: Palatino, Optima, "Source Han Sans CN", "Hiragino Sans GB" Georgia, serif;
-  line-height: 2.4em;
-  background-image: url(https://github.com/facebook/react/wiki/react-logo-1000-transparent.png);
-  background-repeat: no-repeat;
-  background-position: 600px 0;
+  min-width: 800px;
 }
 
-a:link {
+.clearfix::before,
+.clearfix::after {
+  content:".";
+  display:block;
+  height: 0;
+  visibility: hidden;
+}
+.clearfix::after {
+  clear:both;
+}
+.clearfix {
+  zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.expanded {
+  margin: 0;
+  padding: 0;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+  color: #1abc9c;
   text-decoration: none;
 }
 
-.title {
-  color: #aaa;
-  margin: 60px 0 10px;
+.container {
+  width: 900px;
+  margin: 0 auto;
 }
 
-.title span {
-  font-size: 16px;
+header {
+  height: 200px;
+  padding-top: 50px;
+  text-align: center;
+  background: #2D2D2D;
+  overflow: hidden;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+nav {
+  height: 40px;
+  line-height: 40px;
+  background: #222222;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+nav span a {
+  color: #ecf0f1 !important;
+}
+
+.nav-links {
+  margin: 0;
+  list-style: none;
+}
+
+.nav-link {
+  margin: 0 10px;
+}
+
+.nav-link a {
+  display: inline;
+  color: #ecf0f1;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.title-wrapper {
+  position: relative;
+  left: 50%;
+}
+
+.logo, .main-title {
+  position: relative;
+  left: -50%;
+}
+
+.main-title {
   display: inline-block;
+  *display: inline;
+  margin: 60px;
+  font-size: 60px;
+  font-weight: 200;
+  color: #ecf0f1;
 }
 
-.about {
-  font-size: 40px;
-  color: #aae;
+.logo {
+  display: inline-block;
+  *display: inline;
 }
 
-.note {
-  margin-top: 100px;
-  font-size: 14px;
+footer {
+  background: #1D2027;
+  font-size: 15px;
+  padding: 30px 0;
 }
 
-.note a {
-  color: #daa;
-  font-style: italic;
+.footer-info {
+  margin-right: 15px;
 }
+
+.footer-info a {
+  color: #ecf0f1;
+}
+
+.footer-author, .footer-author a {
+  color: #8D8D8E;
+}
+
+.footer-author a:hover {
+  text-decoration: underline;
+}
+
+section {
+  clear: both;
+  position: relative;
+  margin: 30px 0;
+}
+
+section h2 {
+  color: #7f8c8d;
+  font-size: 30px;
+}
+
+.sticky {
+  position: sticky;
+  top: 10px;
+
+}
+
+.content {
+  width: 450px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.links {
+  list-style: none;
+}
+
+.link {
+  margin-bottom: 20px;
+}
+

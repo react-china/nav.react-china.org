@@ -5,95 +5,111 @@
   <meta charset="utf-8">
   <link rel="icon" href="http://react-china.org/uploads/default/37/58d7637262ac6228.png">
   <link rel="stylesheet" type="text/css" href="layout.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
   <meta name="description" content="React 中文社区资源链接导航, 文档, 聊天室, 页面的索引"/>
-  <meta name="keywords" content="React React.js Flux"/>
+  <meta name="keywords" content="React, React.js, Flux"/>
+  <!--[if lt IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="ie.css">
+  <![endif]-->
 </head>
 <body>
-  <div>
-    <span class="about">React 中文索引</span>
-  </div>
-  <div>
-    <div class="title">
-      <span>文档</span>
+  <header class="clearfix">
+    <nav class="fixed-top">
+      <div class="container clearfix">
+        <ul class="nav-links">
+          <li class="nav-link float-left"><a href="#docs">文档</a></li>
+          <li class="nav-link float-left"><a href="#resources">资源</a></li>
+          <li class="nav-link float-left"><a href="#communities">社区</a></li>
+          <li class="nav-link float-left"><a href="#others">其它</a></li>
+        </ul>
+        <span class="float-right">
+          <a href="https://github.com/react-china/nav.react-china.org">GitHub</a>
+        </span>
+      </div>
+    </nav>
+
+    <div class="title-wrapper float-left">
+    <img  class="float-left logo" alt="ReactJS Logo" src="img/reactjs.png" height="180" width="200">
+      <h1 class="main-title float-left">React 中文索引</h1>
     </div>
-    <div>
-      <a href="http://115.29.248.36/react/">React 文档中文翻译</a>
+  </header>
+
+  <section class="clearfix" id="docs">
+    <div class="container clearfix">
+      <div class="content float-left text-center">
+        <h2 class="sticky">文档</h2>
+      </div>
+      <div class="content float-left text-left">
+        <ul class="links">
+          <li class="link"><a href="http://115.29.248.36/react/">React 文档中文翻译</a></li>
+          <li class="link"><a href="http://hulufei.gitbooks.io/react-tutorial/content/introduction.html">React Gitbook 翻译</a></li>
+        </ul>
+      </div>
     </div>
-    <div>
-      <a href="http://hulufei.gitbooks.io/react-tutorial/content/introduction.html">React Gitbook 翻译</a>
+  </section>
+
+  <section class="clearfix" id="resources">
+    <div class="container clearfix">
+      <div class="content float-left text-center">
+        <h2 class="sticky">资源</h2>
+      </div>
+      <div class="content float-left text-left">
+        <ul class="links">
+          <li class="link"><a href="https://github.com/enaqx/awesome-react">Awesome React 列表（英文）</a></li>
+          <li class="link"><a href="https://github.com/ele828/react-native-guide">React Native 学习指南，列表</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="title">
-      <span>资源</span>
+  </section>
+
+  <section class="clearfix" id="communities">
+    <div class="container clearfix">
+      <div class="content float-left text-center">
+        <h2 class="sticky">社区</h2>
+      </div>
+      <div class="content float-left text-left">
+        <ul class="links">
+          <li class="link"><a href="http://react-china.org/">React China 论坛</a></li>
+          <li class="link"><a href="http://weibo.com/reactchina">React 中文微博</a></li>
+          <li class="link"><a href="http://www.weibo.com/u/1067424897">React Native 微博(天猫的同学维护)</a></li>
+          <li class="link"><a href="http://bbs.reactnative.cn/">React Native 中文社区</a></li>
+          <li class="link"><a href="https://gitter.im/react-china/Chat">React 中文 Gitter 聊天室</a></li>
+          <li class="link">QQ 群: 173324629</li>
+          <li class="link">QQ 群 React Native: 52045522</li>
+          <li class="link"><a href="http://react-china.org/t/jian-liao-ge-react-zhong-wen-de-wei-xin-qun-~/352">微信 Group</a></li>
+          <li class="link"><a href="https://talk.ai/v1/via/64fd15001r">简聊 React 群</a></li>
+          <li class="link"><a href="http://segmentfault.com/t/react/blogs">SegmentFault 的 React 标签</a></li>
+          <li class="link"><a href="http://www.zhihu.com/topic/20013159">知乎的 React 标签</a></li>
+          <li class="link"><a href="https://www.v2ex.com/go/react">V2EX的 React 节点</a></li>
+        </ul>
+      </div>
     </div>
-    <div>
-      <a href="https://github.com/enaqx/awesome-react">Awesome React 列表(英文)</a>
+  </section>
+
+  <section class="clearfix" id="others">
+    <div class="container clearfix">
+      <div class="content float-left text-center">
+        <h2 class="sticky">其它</h2>
+      </div>
+      <div class="content float-left text-left">
+        <ul class="links">
+          <li class="link"><a href="https://github.com/react-china">react-china GitHub</a></li>
+          <li class="link"><a href="https://github.com/reactjs-cn/">reactjs-cn GitHub</a></li>
+          <li class="link"><a href="https://www.teambition.com/project/5514c11dba09bc24195a1d39/home">Teambition React 资源搬运团队</a></li>
+          <li class="link"><a href="https://twitter.com/ReactChina">React China Twitter</a></li>
+          <li class="link"><a href="http://www.zhihu.com/people/china-react">React China 知乎首页</a></li>
+          <li class="link"><a href="http://segmentfault.com/u/reactchina">React China SegmentFault 首页</a></li>
+        </ul>
+      </div>
     </div>
-    <div>
-      <a href="https://github.com/ele828/react-native-guide">React Native 学习指南, 列表</a>
+  </section>
+
+  <footer class="clearfix">
+    <div class="container clearfix">
+      <span class="footer-info"><a href="http://nav.react-china.org/">React中文索引</a></span>
+      <span class="footer-author">Made by <a href="mailto:jiyinyiyong@gmail.com">题叶</a> &amp; <a href="mailto:feifei.hang@yahoo.com">Feifei Hang</a></span>
     </div>
-    <div class="title">
-      <span>社区</span>
-    </div>
-    <div>
-      <a href="http://react-china.org/">React China 论坛</a>
-    </div>
-    <div>
-      <a href="http://weibo.com/reactchina">React 中文微博</a>
-    </div>
-    <div>
-      <a href="http://www.weibo.com/u/1067424897">React Native 微博(天猫的同学维护)</a>
-    </div>
-    <div>
-      <a href="http://bbs.reactnative.cn/">React Native 中文社区</a>
-    </div>
-    <div>
-      <a href="https://gitter.im/react-china/Chat">React 中文 Gitter 聊天室</a>
-    </div>
-    <div>
-      QQ 群: <code>173324629</code>
-    </div>
-    <div>
-      QQ 群 React Native: <code>52045522</code>
-    </div>
-    <div>
-      <a href="http://react-china.org/t/jian-liao-ge-react-zhong-wen-de-wei-xin-qun-~/352">微信 Group</a>
-    </div>
-    <div>
-      <a href="https://talk.ai/v1/via/64fd15001r">简聊 React 群</a>
-    </div>
-    <div>
-      <a href="http://segmentfault.com/t/react/blogs">SegmentFault 的 React 标签</a>
-    </div>
-    <div>
-      <a href="http://www.zhihu.com/topic/20013159">知乎的 React 标签</a>
-    </div>
-	<div>
-      <a href="https://www.v2ex.com/go/react">V2EX的 React 节点</a>
-    </div>
-    <div class="title">
-      <span>其他</span>
-    </div>
-    <div>
-      <a href="https://github.com/react-china">react-china GitHub</a>
-    </div>
-    <div>
-      <a href="https://github.com/reactjs-cn/">reactjs-cn GitHub</a>
-    </div>
-    <div>
-      <a href="https://www.teambition.com/project/5514c11dba09bc24195a1d39/home">Teambition React 资源搬运团队</a>
-    </div>
-    <div>
-      <a href="https://twitter.com/ReactChina">React China Twitter</a>
-    </div>
-    <div>
-      <a href="http://www.zhihu.com/people/china-react">React China 知乎首页</a>
-    </div>
-    <div>
-      <a href="http://segmentfault.com/u/reactchina">React China SegmentFault 首页</a>
-    </div>
-  </div>
-  <div class="note">
-    <a href="https://github.com/react-china/nav.react-china.org">想要编辑页面请 Fork 这个仓库</a>
-  </div>
+  </footer>
 </body>
 </html>
