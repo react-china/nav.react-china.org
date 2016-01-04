@@ -43,7 +43,7 @@ a, a:link, a:visited, a:hover, a:active {
 }
 
 header {
-  height: 200px;
+  height: 300px;
   padding-top: 50px;
   text-align: center;
   background: #2D2D2D;
@@ -87,9 +87,34 @@ nav a:hover {
   text-decoration: underline;
 }
 
+.banner {
+  color: #00D8FF;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.btn {
+  display: block;
+  height: 50px;
+  width: 300px;
+  line-height: 50px;
+  margin: 0 auto;
+  background: #e74c3c;
+  color: #ecf0f1 !important;
+  margin-top: 220px;
+  border-radius: 3px;
+}
+
+.btn:hover {
+  background: #c0392b;
+}
+
 .title-wrapper {
   position: relative;
   left: 50%;
+  margin-top: 20px;
 }
 
 .logo, .main-title {

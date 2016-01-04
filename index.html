@@ -17,22 +17,22 @@
   <header class="clearfix">
     <nav class="fixed-top">
       <div class="container clearfix">
-        <ul class="nav-links">
+        <span id="banner" class="float-left banner hide">React中文索引</span>
+        <ul class="nav-links float-right">
           <li class="nav-link float-left"><a href="#docs">文档</a></li>
           <li class="nav-link float-left"><a href="#resources">资源</a></li>
           <li class="nav-link float-left"><a href="#communities">社区</a></li>
           <li class="nav-link float-left"><a href="#others">其它</a></li>
         </ul>
-        <span class="float-right">
-          <a rel="external" href="https://github.com/react-china/nav.react-china.org">GitHub</a>
-        </span>
       </div>
     </nav>
 
-    <div class="title-wrapper float-left">
+    <div class="title-wrapper float-left clearfix">
     <img  class="float-left logo" alt="ReactJS Logo" src="img/reactjs.png" height="180" width="200">
       <h1 class="main-title float-left">React 中文索引</h1>
     </div>
+
+    <a class="btn clearfix" rel="external" href="https://github.com/react-china/nav.react-china.org">想要编辑页面请Fork这个仓库</a>
   </header>
 
   <section class="clearfix" id="docs">
@@ -113,6 +113,7 @@
   </footer>
 
   <script>
+    'use strict';
     var anchors = document.getElementsByTagName('a');
     var anchor;
     for (var i = 0, l = anchors.length; i !== l; ++i) {
@@ -121,6 +122,16 @@
         anchor.setAttribute('target', '_blank');
       }
     }
+
+    var banner = document.getElementById('banner');
+    window.onscroll = function () {
+      if (window.scrollY >= 120) {
+        banner.className = banner.className.replace(/hide/g, ' ');
+      }
+      else {
+        banner.className += ' hide';
+      }
+    };
   </script>
 </body>
 </html>
