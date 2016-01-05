@@ -98,12 +98,11 @@ nav a:hover {
 .btn {
   display: block;
   height: 50px;
-  width: 300px;
+  width: 350px;
   line-height: 50px;
   margin: 0 auto;
   background: #e74c3c;
   color: #ecf0f1 !important;
-  margin-top: 220px;
   border-radius: 3px;
 }
 
